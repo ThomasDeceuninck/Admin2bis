@@ -1,0 +1,14 @@
+#Image de base ubuntu
+FROM ubuntu:latest
+
+#update sys
+RUN apt update
+
+#ajouter ping et dig
+RUN apt install dnsutils -y
+RUN apt install iputils-ping -y
+RUN apt install links -y
+RUN apt install nano
+
+#Copier le resolv.conf
+COPY resolv.conf /etc
