@@ -12,3 +12,5 @@ RUN apt install nano
 
 #Copier le resolv.conf
 COPY resolv.conf /etc
+
+

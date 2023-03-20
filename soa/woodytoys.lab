@@ -1,3 +1,4 @@
+$ORIGIN woodytoys.lab.
 $TTL 86400
 @     IN     SOA    soa.woodytoys.lab.     hostmaster.woodytoys.lab. (
                     2001062501 ; serial

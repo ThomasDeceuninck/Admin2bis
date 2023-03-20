@@ -19,3 +19,4 @@ EXPOSE 53/udp
 
 #Lancer le service bind9
 CMD ["/usr/sbin/named","-g"]
+
