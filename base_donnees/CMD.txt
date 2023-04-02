@@ -1,0 +1,5 @@
+docker build -t db .
+docker run -d --mount source=v_db,target=/var/mysql --name db db
+docker exec -ti db /bin/bash
+mysql -u root -p 
+source setup.sql

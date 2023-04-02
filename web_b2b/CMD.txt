@@ -1,0 +1,2 @@
+docker build -t web_b2b .
+docker run -d --name web_b2b -p 8080:80 web_b2b
