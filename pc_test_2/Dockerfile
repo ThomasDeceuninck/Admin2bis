@@ -9,8 +9,12 @@ RUN apt install dnsutils -y
 RUN apt install iputils-ping -y
 RUN apt install links -y
 RUN apt install nano
+RUN adduser toto
+RUN echo "tutu:tutu" | chpasswd
+RUN apt update
+RUN apt install mutt -y
 
-#Copier le resolv.conf
-COPY resolv.conf /etc
+COPY .muttrc /home/toto
 
-
+#Le laisser running
+CMD tail -f /dev/null
