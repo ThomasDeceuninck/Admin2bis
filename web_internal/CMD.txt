@@ -1,2 +1,0 @@
-docker build -t web_internal .
-docker run -d --name web_internal -p 8081:80 web_internal
