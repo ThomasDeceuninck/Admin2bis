@@ -12,7 +12,7 @@ INSERT INTO `inventory` VALUES (NULL, 'playmobil' , 9.99);
 
 CREATE USER 'userb2b'@'%' IDENTIFIED BY 'Zh0qtDbBRiKsmX4V8dES';
  
-GRANT ALL PRIVILEGES ON b2b.* TO 'userb2b'@'%';
+GRANT ALL PRIVILEGES ON b2b.* TO 'userb2b'@'172.20.2.4';
 
 CREATE DATABASE internal;
 USE internal;
@@ -24,4 +24,4 @@ INSERT INTO `employee` VALUES (NULL,  'Jarrett' , 'Den', 'cc@gmail.com');
 
 CREATE USER 'userinternal'@'%' IDENTIFIED BY '9Y8WlgYjPzZznK5SMn2Z';
  
-GRANT ALL PRIVILEGES ON internal.* TO 'userinternal'@'%';
+GRANT ALL PRIVILEGES ON internal.* TO 'userinternal'@'172.20.4.6';
