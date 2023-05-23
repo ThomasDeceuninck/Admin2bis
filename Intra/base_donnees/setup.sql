@@ -10,9 +10,11 @@ INSERT INTO `inventory` VALUES (NULL, 'buzz' , 11.50);
 INSERT INTO `inventory` VALUES (NULL, 'woody' , 5.36);
 INSERT INTO `inventory` VALUES (NULL, 'playmobil' , 9.99);
 
-CREATE USER 'userb2b'@'%' IDENTIFIED BY 'Zh0qtDbBRiKsmX4V8dES';
+CREATE USER 'userb2b_select'@'%' IDENTIFIED BY 'Zh0qtDbBRiKsmX4V8dES';
+CREATE USER 'userb2b_insert'@'%' IDENTIFIED BY 'Ah0qtDsoCK89S6dzv9sd';
  
-GRANT ALL PRIVILEGES ON b2b.* TO 'userb2b'@'172.20.2.4';
+GRANT SELECT ON b2b.* TO 'userb2b_select'@'172.20.2.4';
+GRANT INSERT ON b2b.* TO 'userb2b_insert'@'172.20.2.4';
 
 CREATE DATABASE internal;
 USE internal;
@@ -24,4 +26,4 @@ INSERT INTO `employee` VALUES (NULL,  'Jarrett' , 'Den', 'cc@gmail.com');
 
 CREATE USER 'userinternal'@'%' IDENTIFIED BY '9Y8WlgYjPzZznK5SMn2Z';
  
-GRANT ALL PRIVILEGES ON internal.* TO 'userinternal'@'172.20.4.6';
+GRANT SELECT ON internal.* TO 'userinternal'@'172.20.4.6';
